@@ -77,7 +77,7 @@ function iaenhance.register_tool(name, e_name, def)
 		-- Registering the enhanced tool.
 		--old_register_tool(e_name, e_def)
 		minetest.register_tool(e_name, e_def)
-		print('registered tool: '..e_name)
+		print('iaenhanced registered tool: '..e_name)
 
 		-- Registering a craft for the enhanced tool.
 		minetest.register_craft({
@@ -106,10 +106,10 @@ function iaenhance.main()
 			local convert_to = 'enhanced:'..modname..'_'..itmname
 			local alias      = name..'_enhanced'
 			if DEBUG_MAIN then
-			print('modname: '..modname)
-			print('itmname: '..itmname)
-			print('convert to: '..convert_to)
-			print('register alias: '..alias..' ==> '..convert_to)
+			print('iaenhanced modname: '..modname)
+			print('iaenhanced itmname: '..itmname)
+			print('iaenhanced convert to: '..convert_to)
+			print('iaenhanced register alias: '..alias..' ==> '..convert_to)
 			end
 			iaenhance.register_tool(name, convert_to, def)
 			minetest.register_alias(alias, convert_to)
