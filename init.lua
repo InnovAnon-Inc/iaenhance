@@ -57,6 +57,9 @@ function iaenhance.register_tool(name, e_name, def)
 		end
 
 		-- too many items
+		if e_def.groups == nil then
+			e_def.groups = {}
+		end
 		e_def.groups.not_in_creative_inventory = 1
 
 		-- We create our own inventory image by tinting the provided inventory image yellow
