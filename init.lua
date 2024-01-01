@@ -25,6 +25,8 @@ function iaenhance.register_tool(name, e_name, def)
 	-- The name is a separate argument which we need to copy as well.
 	--local e_name = name
 
+	-- TODO make radioactive
+	
 	-- If the tool has standardized tool capabilities
 	if e_def.tool_capabilities and e_def.tool_capabilities.groupcaps then
 
